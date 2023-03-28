@@ -1,0 +1,62 @@
+/* Testing */
+
+* {
+    border: 1px solid red;
+}
+/* ---------------------------------------------- */
+/* Global Formatting */
+
+html {
+    background-color: darkgray;
+}
+
+/* ---------------------------------------------- */
+/* Page Layout */
+
+body {
+    margin: 0px;
+}
+
+#ets-container{
+    border: 1px solid blue;
+    max-width: 100vw;    
+}
+
+/* ---------------------------------------------- */
+/* Etch-A-Sketch - Top level elements */
+
+#workspace{
+    width: 30vw;
+    height: 30vw;
+    background-color: beige;
+    display: grid;
+}
+
+#toolbox{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#color-picker{
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap:20px;
+    display: flex;
+}
+/* ---------------------------------------------- */
+/* Etch-A-Sketch - Individual Cells */
+
+.grid-element{
+    background-color: white;
+}
+
+
+
+/* .container {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+} */
