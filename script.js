@@ -23,7 +23,7 @@ function sliderGrid(e) {
     createGrid(e.target.value);
     
     const sliderValue = document.getElementById ('slider-value');
-    sliderValue.innerHTML = e.target.value;
+    sliderValue.innerHTML = e.target.value + "x" + e.target.value;
 }
 
 function paint(){
@@ -48,7 +48,7 @@ let isPainting = false;
 let paintColor = 'black';
 
 document.addEventListener('DOMContentLoaded', function(){
-    etsContainer.innerHTML = '<div id="workspace" ondragstart="return false;"></div><div id="toolbox"><ul><li><input type="color" value="#000000" id="color-picker"></li><li><input type="range" id="grid-size" min="2" max="64" value="8" step="2"><span id="slider-value">8</span></li><li><input id="rainbow-button" type="checkbox" value="Rainbow"></li><li><input type="button" id="reset-button" value="reset"></li></ul></div>';
+    etsContainer.innerHTML = '<div id="workspace" ondragstart="return false;"></div><div id="toolbox"><ul><li><div id="tool-1"><p>Color Picker</p><input type="color" value="#000000" id="color-picker"></div></li><li><div id="tool-2"><p id="slider-value">8x8</p><input type="range" id="grid-size" min="2" max="64" value="8" step="2"></div></li><li><div id="tool-3"><p>Rainbow?</p><label class="switch"><input type="checkbox" id="rainbow-button" value="Rainbow"><span class="slider round"></span></label></div></li><li><div id="tool-4"><input type="button" id="reset-button" value="Clear"></div></li></ul></div>';
     
     const workspace = document.getElementById ('workspace');
     setWorkspace();
